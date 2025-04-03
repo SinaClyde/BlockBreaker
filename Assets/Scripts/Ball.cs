@@ -54,7 +54,7 @@ public class Ball : MonoBehaviour
         {
             AudioClip clip = environmentHitSounds[Random.Range(0, environmentHitSounds.Length)];
             _myAudioSource.PlayOneShot(clip);
-            _rb.velocity += velocityTweak;
+            _rb.linearVelocity += velocityTweak;
         }
     }
 }
